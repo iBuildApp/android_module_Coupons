@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_loading_upper">Loading...</string>
+    <string name="plugin_initializatin_failed">Can not initialize plugin</string>
+
+    <string name="alert_no_internet">Cellular Data is Turned off. Turn on cellular data or use Wi-Fi to access data
+    </string>
+
+    <string name="romanblack_coupon_coupons">Coupons</string>
+    <string name="common_home_upper">Home</string>
+
+    <string name="romanblack_coupon_read_more">read more</string>
+    <string name="title">Title</string>
+    <string name="tap_to_resfresh">Tap to refresh...</string>
+    <string name="description">Description</string>
+    <string name="discription">Description</string>
+</resources>

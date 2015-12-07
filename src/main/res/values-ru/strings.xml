@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_loading_upper">Загрузка...</string>
+    <string name="plugin_initializatin_failed">Невозможно инициализировать плагин</string>
+    <string name="alert_no_internet">Мобильный интернет отключен. Включите интернет, либо используйте WiFi</string>
+    <string name="romanblack_coupon_coupons">Купоны</string>
+    <string name="romanblack_coupon_read_more">Еще</string>
+    <string name="title">Заголовок</string>
+    <string name="tap_to_resfresh">Нажмите чтобы обновить</string>
+    <string name="description">Описание</string>
+    <string name="discription">Описание</string>
+    <string name="common_home_upper">Домой</string>
+</resources>

@@ -1,0 +1,9 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ibuildapp.romanblack.CouponPlugin">
+
+    <application>
+        <activity android:name="CouponPlugin"/>
+        <activity android:name="CouponDetails"/>
+    </application>
+
+</manifest>
