@@ -28,6 +28,7 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 import com.appbuilder.sdk.android.AppBuilderModuleMain;
+import com.appbuilder.sdk.android.StartUpActivity;
 import com.appbuilder.sdk.android.Utils;
 import com.appbuilder.sdk.android.Widget;
 
@@ -38,6 +39,7 @@ import java.util.ArrayList;
  * Main module class. Module entry point.
  * Represents Coupons widget.
  */
+@StartUpActivity(moduleName = "Coupons")
 public class CouponPlugin extends AppBuilderModuleMain {
 
     private String feedUrl = "";

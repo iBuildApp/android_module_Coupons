@@ -110,6 +110,7 @@ public class CouponDetails extends AppBuilderModule {
 
             webView = (WebView) findViewById(R.id.romanblack_coupon_feedDetails);
             webView.getSettings().setJavaScriptEnabled(true);
+//            webView.getSettings().setPluginsEnabled(true);
             webView.getSettings().setBuiltInZoomControls(true);
             webView.getSettings().setSupportZoom(true);
             webView.getSettings().setUseWideViewPort(false);
