@@ -14,4 +14,8 @@
     <string name="tap_to_resfresh">Tap to refresh...</string>
     <string name="description">Description</string>
     <string name="discription">Description</string>
+
+    <string name="notification_error_ssl_cert_invalid">SSL error occurred. Would you like to proceed?</string>
+    <string name="on_cancel">Cancel</string>
+    <string name="on_continue">Continue</string>
 </resources>
