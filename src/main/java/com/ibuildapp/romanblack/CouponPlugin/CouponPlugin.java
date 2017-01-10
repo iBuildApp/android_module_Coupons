@@ -108,6 +108,7 @@ public class CouponPlugin extends AppBuilderModuleMain {
             }
         }
     };
+    private String xmlData;
 
     @Override
     public void create() {
@@ -119,7 +120,6 @@ public class CouponPlugin extends AppBuilderModuleMain {
             currentIntent = getIntent();
             Bundle store = currentIntent.getExtras();
             widget = (Widget) store.getSerializable("Widget");
-            String xmlData;
             if (widget == null) {
                 handler.sendEmptyMessageDelayed(INITIALIZATION_FAILED, 100);
                 return;
@@ -127,7 +127,7 @@ public class CouponPlugin extends AppBuilderModuleMain {
 
             try {
                 if (widget.getPluginXmlData().length() == 0) {
-                    if (currentIntent.getStringExtra("WidgetFile").length() == 0) {
+                    if (widget.getPathToXmlFile().length() == 0) {
                         handler.sendEmptyMessageDelayed(INITIALIZATION_FAILED, 3000);
                         return;
                     }
@@ -141,7 +141,7 @@ public class CouponPlugin extends AppBuilderModuleMain {
             if (widget.getPluginXmlData().length() > 0) {
                 xmlData = widget.getPluginXmlData();
             } else {
-                xmlData = readXmlFromFile(currentIntent.getStringExtra("WidgetFile"));
+                xmlData = readXmlFromFile(widget.getPathToXmlFile());
             }
 
             widgetMD5 = Utils.md5(xmlData);
@@ -216,12 +216,7 @@ public class CouponPlugin extends AppBuilderModuleMain {
                 public void run() {
                     try {//ErrorLogging
                         EntityParser parser;
-                        if (widget.getPluginXmlData().length() > 0) {
-                            parser = new EntityParser(widget.getPluginXmlData());
-                        } else {
-                            String xmlData = readXmlFromFile(currentIntent.getStringExtra("WidgetFile"));
-                            parser = new EntityParser(xmlData);
-                        }
+                        parser = new EntityParser(xmlData);
 
                         parser.parse();
 
